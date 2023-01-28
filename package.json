@@ -3,7 +3,7 @@
     "private": true,
     "scripts": {
         "back:dev": "cd apps/api-server && npm run dev",
-        "front:dev": "cd apps/client && npm run dev",
+        "front:dev": "cd apps/react-client && npm run dev",
         "dev": "npm-run-all --parallel back:dev front:dev"
     },
     "dependencies": {

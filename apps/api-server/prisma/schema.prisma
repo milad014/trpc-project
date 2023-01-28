@@ -10,9 +10,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
+model Comment {
+  id       Int    @id @default(autoincrement())
+  text     String
+  username String
+  postId   Int
+}
+
 model Post {
   id        Int      @id @default(autoincrement())
   title     String
+    username  String   @default("anonymous")
   text      String
   createdAt DateTime
   updatedAt DateTime
